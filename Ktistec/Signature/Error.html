@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="HEAD-dev">
+<meta name="crystal_docs.project_name" content="ktistec">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="ktistec">
+  <title>Ktistec::Signature::Error - ktistec HEAD-dev</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          ktistec
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD-dev
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="ktistec/Account" data-name="account">
+      <a href="../../Account.html">Account</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivitiesController" data-name="activitiescontroller">
+      <a href="../../ActivitiesController.html">ActivitiesController</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/ActivityPub" data-name="activitypub">
+      <a href="../../ActivityPub.html">ActivityPub</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="ktistec/ActivityPub/Activity" data-name="activitypub::activity">
+      <a href="../../ActivityPub/Activity.html">Activity</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Accept" data-name="activitypub::activity::accept">
+      <a href="../../ActivityPub/Activity/Accept.html">Accept</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Announce" data-name="activitypub::activity::announce">
+      <a href="../../ActivityPub/Activity/Announce.html">Announce</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Create" data-name="activitypub::activity::create">
+      <a href="../../ActivityPub/Activity/Create.html">Create</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Delete" data-name="activitypub::activity::delete">
+      <a href="../../ActivityPub/Activity/Delete.html">Delete</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Follow" data-name="activitypub::activity::follow">
+      <a href="../../ActivityPub/Activity/Follow.html">Follow</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Like" data-name="activitypub::activity::like">
+      <a href="../../ActivityPub/Activity/Like.html">Like</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Reject" data-name="activitypub::activity::reject">
+      <a href="../../ActivityPub/Activity/Reject.html">Reject</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Undo" data-name="activitypub::activity::undo">
+      <a href="../../ActivityPub/Activity/Undo.html">Undo</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Activity/Update" data-name="activitypub::activity::update">
+      <a href="../../ActivityPub/Activity/Update.html">Update</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/ActivityPub/Actor" data-name="activitypub::actor">
+      <a href="../../ActivityPub/Actor.html">Actor</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Actor/Application" data-name="activitypub::actor::application">
+      <a href="../../ActivityPub/Actor/Application.html">Application</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Actor/Group" data-name="activitypub::actor::group">
+      <a href="../../ActivityPub/Actor/Group.html">Group</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Actor/Organization" data-name="activitypub::actor::organization">
+      <a href="../../ActivityPub/Actor/Organization.html">Organization</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Actor/Person" data-name="activitypub::actor::person">
+      <a href="../../ActivityPub/Actor/Person.html">Person</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Actor/Service" data-name="activitypub::actor::service">
+      <a href="../../ActivityPub/Actor/Service.html">Service</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Collection" data-name="activitypub::collection">
+      <a href="../../ActivityPub/Collection.html">Collection</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/ActivityPub/Object" data-name="activitypub::object">
+      <a href="../../ActivityPub/Object.html">Object</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Object/Article" data-name="activitypub::object::article">
+      <a href="../../ActivityPub/Object/Article.html">Article</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Object/Attachment" data-name="activitypub::object::attachment">
+      <a href="../../ActivityPub/Object/Attachment.html">Attachment</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Object/Note" data-name="activitypub::object::note">
+      <a href="../../ActivityPub/Object/Note.html">Note</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Object/Question" data-name="activitypub::object::question">
+      <a href="../../ActivityPub/Object/Question.html">Question</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Object/Source" data-name="activitypub::object::source">
+      <a href="../../ActivityPub/Object/Source.html">Source</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActivityPub/Object/Tombstone" data-name="activitypub::object::tombstone">
+      <a href="../../ActivityPub/Object/Tombstone.html">Tombstone</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ActorsController" data-name="actorscontroller">
+      <a href="../../ActorsController.html">ActorsController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Array" data-name="array(t)">
+      <a href="../../Array.html">Array</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/EverythingController" data-name="everythingcontroller">
+      <a href="../../EverythingController.html">EverythingController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Hash" data-name="hash(k, v)">
+      <a href="../../Hash.html">Hash</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/HomeController" data-name="homecontroller">
+      <a href="../../HomeController.html">HomeController</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="ktistec/Ktistec" data-name="ktistec">
+      <a href="../../Ktistec.html">Ktistec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Auth" data-name="ktistec::auth">
+      <a href="../../Ktistec/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Controller" data-name="ktistec::controller">
+      <a href="../../Ktistec/Controller.html">Controller</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/CSRF" data-name="ktistec::csrf">
+      <a href="../../Ktistec/CSRF.html">CSRF</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/Database" data-name="ktistec::database">
+      <a href="../../Ktistec/Database.html">Database</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Database/Migration" data-name="ktistec::database::migration">
+      <a href="../../Ktistec/Database/Migration.html">Migration</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/HTML" data-name="ktistec::html">
+      <a href="../../Ktistec/HTML.html">HTML</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/HTML/Attachment" data-name="ktistec::html::attachment">
+      <a href="../../Ktistec/HTML/Attachment.html">Attachment</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/HTML/Enhancements" data-name="ktistec::html::enhancements">
+      <a href="../../Ktistec/HTML/Enhancements.html">Enhancements</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/HTML/Hashtag" data-name="ktistec::html::hashtag">
+      <a href="../../Ktistec/HTML/Hashtag.html">Hashtag</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/HTML/Mention" data-name="ktistec::html::mention">
+      <a href="../../Ktistec/HTML/Mention.html">Mention</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/JSON_LD" data-name="ktistec::json_ld">
+      <a href="../../Ktistec/JSON_LD.html">JSON_LD</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/JSON_LD/Loader" data-name="ktistec::json_ld::loader">
+      <a href="../../Ktistec/JSON_LD/Loader.html">Loader</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/JWT" data-name="ktistec::jwt">
+      <a href="../../Ktistec/JWT.html">JWT</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/JWT/Error" data-name="ktistec::jwt::error">
+      <a href="../../Ktistec/JWT/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Method" data-name="ktistec::method">
+      <a href="../../Ktistec/Method.html">Method</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/Model" data-name="ktistec::model(*t)">
+      <a href="../../Ktistec/Model.html">Model</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Assignable" data-name="ktistec::model::assignable">
+      <a href="../../Ktistec/Model/Assignable.html">Assignable</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/ClassMethods" data-name="ktistec::model::classmethods">
+      <a href="../../Ktistec/Model/ClassMethods.html">ClassMethods</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Common" data-name="ktistec::model::common">
+      <a href="../../Ktistec/Model/Common.html">Common</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Deletable" data-name="ktistec::model::deletable">
+      <a href="../../Ktistec/Model/Deletable.html">Deletable</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Error" data-name="ktistec::model::error">
+      <a href="../../Ktistec/Model/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Errors" data-name="ktistec::model::errors">
+      <a href="../../Ktistec/Model/Errors.html">Errors</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Insignificant" data-name="ktistec::model::insignificant">
+      <a href="../../Ktistec/Model/Insignificant.html">Insignificant</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/Model/InstanceMethods" data-name="ktistec::model::instancemethods">
+      <a href="../../Ktistec/Model/InstanceMethods.html">InstanceMethods</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/InstanceMethods/Node" data-name="ktistec::model::instancemethods::node">
+      <a href="../../Ktistec/Model/InstanceMethods/Node.html">Node</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Invalid" data-name="ktistec::model::invalid">
+      <a href="../../Ktistec/Model/Invalid.html">Invalid</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Linked" data-name="ktistec::model::linked">
+      <a href="../../Ktistec/Model/Linked.html">Linked</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/NotFound" data-name="ktistec::model::notfound">
+      <a href="../../Ktistec/Model/NotFound.html">NotFound</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Persistent" data-name="ktistec::model::persistent">
+      <a href="../../Ktistec/Model/Persistent.html">Persistent</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Polymorphic" data-name="ktistec::model::polymorphic">
+      <a href="../../Ktistec/Model/Polymorphic.html">Polymorphic</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/Model/Serialized" data-name="ktistec::model::serialized">
+      <a href="../../Ktistec/Model/Serialized.html">Serialized</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Serialized/ClassMethods" data-name="ktistec::model::serialized::classmethods">
+      <a href="../../Ktistec/Model/Serialized/ClassMethods.html">ClassMethods</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Model/Utils" data-name="ktistec::model::utils">
+      <a href="../../Ktistec/Model/Utils.html">Utils</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/Open" data-name="ktistec::open">
+      <a href="../../Ktistec/Open.html">Open</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Open/Error" data-name="ktistec::open::error">
+      <a href="../../Ktistec/Open/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Rewrite" data-name="ktistec::rewrite">
+      <a href="../../Ktistec/Rewrite.html">Rewrite</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Ktistec/Server" data-name="ktistec::server">
+      <a href="../../Ktistec/Server.html">Server</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="ktistec/Ktistec/Signature" data-name="ktistec::signature">
+      <a href="../../Ktistec/Signature.html">Signature</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="ktistec/Ktistec/Signature/Error" data-name="ktistec::signature::error">
+      <a href="../../Ktistec/Signature/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Ktistec/Util" data-name="ktistec::util">
+      <a href="../../Ktistec/Util.html">Util</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Ktistec/Util/PaginatedArray" data-name="ktistec::util::paginatedarray(t)">
+      <a href="../../Ktistec/Util/PaginatedArray.html">PaginatedArray</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/ObjectsController" data-name="objectscontroller">
+      <a href="../../ObjectsController.html">ObjectsController</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Relationship" data-name="relationship">
+      <a href="../../Relationship.html">Relationship</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="ktistec/Relationship/Content" data-name="relationship::content">
+      <a href="../../Relationship/Content.html">Content</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Relationship/Content/Inbox" data-name="relationship::content::inbox">
+      <a href="../../Relationship/Content/Inbox.html">Inbox</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Relationship/Content/Outbox" data-name="relationship::content::outbox">
+      <a href="../../Relationship/Content/Outbox.html">Outbox</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Relationship/Social" data-name="relationship::social">
+      <a href="../../Relationship/Social.html">Social</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Relationship/Social/Follow" data-name="relationship::social::follow">
+      <a href="../../Relationship/Social/Follow.html">Follow</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/RelationshipsController" data-name="relationshipscontroller">
+      <a href="../../RelationshipsController.html">RelationshipsController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/RemoteFollowsController" data-name="remotefollowscontroller">
+      <a href="../../RemoteFollowsController.html">RemoteFollowsController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/SearchesController" data-name="searchescontroller">
+      <a href="../../SearchesController.html">SearchesController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Session" data-name="session">
+      <a href="../../Session.html">Session</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/SessionsController" data-name="sessionscontroller">
+      <a href="../../SessionsController.html">SessionsController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/SettingsController" data-name="settingscontroller">
+      <a href="../../SettingsController.html">SettingsController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/SuggestionsController" data-name="suggestionscontroller">
+      <a href="../../SuggestionsController.html">SuggestionsController</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Tag" data-name="tag">
+      <a href="../../Tag.html">Tag</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Tag/Hashtag" data-name="tag::hashtag">
+      <a href="../../Tag/Hashtag.html">Hashtag</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Tag/Mention" data-name="tag::mention">
+      <a href="../../Tag/Mention.html">Mention</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/TagsController" data-name="tagscontroller">
+      <a href="../../TagsController.html">TagsController</a>
+      
+    </li>
+  
+  <li class="parent " data-id="ktistec/Task" data-name="task">
+      <a href="../../Task.html">Task</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="ktistec/Task/Deliver" data-name="task::deliver">
+      <a href="../../Task/Deliver.html">Deliver</a>
+      
+        <ul>
+  
+  <li class=" " data-id="ktistec/Task/Deliver/State" data-name="task::deliver::state">
+      <a href="../../Task/Deliver/State.html">State</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Task/Failure" data-name="task::failure">
+      <a href="../../Task/Failure.html">Failure</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/Task/RefreshActor" data-name="task::refreshactor">
+      <a href="../../Task/RefreshActor.html">RefreshActor</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/TaskWorker" data-name="taskworker">
+      <a href="../../TaskWorker.html">TaskWorker</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/UploadsController" data-name="uploadscontroller">
+      <a href="../../UploadsController.html">UploadsController</a>
+      
+    </li>
+  
+  <li class=" " data-id="ktistec/WellKnownController" data-name="wellknowncontroller">
+      <a href="../../WellKnownController.html">WellKnownController</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Ktistec::Signature::Error
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Ktistec/Signature/Error.html">Ktistec::Signature::Error</a></li><li class="superclass">Exception</li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
